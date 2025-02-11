@@ -61,3 +61,8 @@ print("dict2 : ", dict2)
 
 print("dict1 points to : ", id(dict1))
 print("dict2 points to: ", id(dict2)) #points to the same address
+
+# Dictionaries can be changed, Integers are immutable, can't be changed
+# Nodes in LinkedList operate like dictionary, if two variables point at same node,
+# you can change the value of that node.
+# if no pointer pointa to a variable, python remove it thr garbage collection

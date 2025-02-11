@@ -8,8 +8,15 @@
     O(log n) = Divide and Conquer
     O(1) = constant
     https://www.bigocheatsheet.com/
-    
-            
 
-
-            
+## LinkedList
+1. spread out in different places in memory, not contiguous, so doesn't have indexes
+2. Add or remove element
+    remove at end - O(1)
+    add at end - O(n)
+    add at front - O(1)
+    remove at front - O(1)
+    add at middle - O(n)
+    remove at middle - O(n)
+3.  Lookup element
+    looking up by value or index - O(n)
