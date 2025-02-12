@@ -61,8 +61,9 @@ Search Insert Delete Operations Pseudo Code
 
 ## BST :Efficiency
 
-                    best     average    worst
-search(key)         O(1)       O(h)      O(h)
-insert(key, item)   O(1)       O(h)      O(h)
-delete(key)         O(1)       O(h)      O(h)
+| Operation         | Best Case | Average Case | Worst Case |
+|------------------|----------|-------------|------------|
+| search(key)      | O(1)     | O(h)        | O(h)       |
+| insert(key, item)| O(1)     | O(h)        | O(h)       |
+| delete(key)      | O(1)     | O(h)        | O(h)       |
 
