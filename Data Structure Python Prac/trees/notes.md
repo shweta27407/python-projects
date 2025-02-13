@@ -50,14 +50,35 @@ Proper binary tree = when every node has either 0 or 2 children
 >[!TIP]
 > Check pseudocode of LevelOrder
 
-# Bnary Search Tree
+# Binary Search Tree
 
 Important Terms : key, key-value pair, item, node
 All BSTs should contain 
 
 node k in BST : all nodes in k's left subtree < k ,,, all nodes in k's right subtree > k
 
+>[!Note]
+>As the number of elements in the tree increases, the height does not increase linearly, but rather in proportion to O(log n).
+> Height is in O(log n)
+> Binary Trees cand egenerate into 𝑂(𝑛) runtime complexity
+> 3
+>    \
+>     9
+>      \
+>      17
+>        \
+>         18
+>           \
+>            19
+>              \
+>               23 
+
+
+
 Search Insert Delete Operations Pseudo Code
+
+#### Height Balance Property 
+bal(T) = h(Tright) - h(Tleft)
 
 ## BST :Efficiency
 
@@ -66,4 +87,29 @@ Search Insert Delete Operations Pseudo Code
 | search(key)      | O(1)     | O(h)        | O(h)       |
 | insert(key, item)| O(1)     | O(h)        | O(h)       |
 | delete(key)      | O(1)     | O(h)        | O(h)       |
+
+## AVL Trees / Adelson Velsky Landis
+- it is a BST
+- for each internal node, the balance of the subtree rooted at is either 0, -1 or +1
+
+## 2-3-4 Trees
+- each internal node has at least two children (called as d-nodes)
+- each node contains d-1 data items of form (key, value)
+- the keys form a search tree
+
+### 2-3-4 Efficiency
+
+| Operation         | Best Case | Average Case | Worst Case |
+|------------------|----------|-------------|------------|
+| search(key)      | O(1)     | O(log n)        | O(log n)       |
+| insert(key, item)| O(1)     | O(log n)        | O(log n)       |
+| delete(key)      | O(1)     | O(log n)        | O(log n)       |
+
+Implementing 234 trees require lot of edge case handling, three separate node classes
+
+## Red-Black Trees
+- Red Black tree represent 2-3-4 tree by means of binary tree whose nodes are colored either red or black
+- have simpler implementation compared to 2-3-4 trees
+
+
 
